@@ -48,6 +48,11 @@ h1, #ville {
 	margin-bottom: 20px;
 }
 
+.buton:hover, #inputVille:hover {
+	animation: grossissement 1s;
+	animation-fill-mode : forwards;
+}
+
 a, input {
 	font-family: 'Lobster', cursive;
 	font-weight: normal;
@@ -96,6 +101,17 @@ input[type=submit] {
 #suppElement, #contentHidden{
 	display: none;
 }
+
+@-webkit-keyframes grossissement{
+	0%{
+		transform: scale(1);
+	}
+	100%{
+		transform: scale(1.1);
+	}
+
+}
+
 @media (max-width: 800px) {
 	h1, #ville, #infoPrincipale {
 		font-size: 20pt !important;
